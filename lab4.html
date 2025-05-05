@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <style>
+        ul{
+            list-style-type:none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+
+        }
+        li{
+            float: left;
+            padding: 12px;
+            color: white;
+        }
+        li:hover{
+            background-color: black;
+        }
+       
+        table,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+
+            
+        }
+        div{
+            display: inline-block;
+            width: 47%;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+    </ul>
+   
+   
+    <div>
+        <table style="width: 100%;">
+            <caption>Table1</caption>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>doe</td>
+                <td>70</td>
+            </tr>
+        </table>
+    </div>
+    <div> <table style="width: 100%;">
+        <caption>Table 2</caption>
+        
+        <tr> 
+            <th rowspan="2">Name</th>
+            <td>John</td>
+        </tr>
+        <tr>
+
+            <td>doe</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>70</td>
+        </tr>
+    </table>
+
+</body>
+</html>
