@@ -23,28 +23,35 @@
         }
        
         table,td,th{
-            border: 1px solid black;
+            border: 2px solid black;
             border-collapse: collapse;
-
+            width: 40%;
+            margin-top: 3rem;
+            margin-right: 5%;
+            margin-left: 5%;
             
         }
-        div{
-            display: inline-block;
-            width: 47%;
-            margin-top: 0;
+        th:nth-child(even),td:nth-child(even){
+            background-color: #333333;
+            color: white;
         }
+        
+       a{
+        text-decoration: none;
+        color: white;
+       }
     </style>
 </head>
 <body>
     <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Blog</li>
+        <li><a href="https://saalimsnest.netlify.app/">Home</a></li>
+        <li><a href="https://saalimsnest.netlify.app/">About</a></li>
+        <li><a href="https://saalimsnest.netlify.app/">Blog</a></li>
     </ul>
    
    
-    <div>
-        <table style="width: 100%;">
+   
+        <table style="float: left;">
             <caption>Table1</caption>
             <tr>
                 <th colspan="2">Name</th>
@@ -55,14 +62,24 @@
                 <td>doe</td>
                 <td>70</td>
             </tr>
+            <tr>
+                <td>Jake</td>
+                <td>Programmer</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Steve</td>
+                <td>Smith</td>
+                <td>42</td>
+            </tr>
         </table>
-    </div>
-    <div> <table style="width: 100%;">
+     <table>
         <caption>Table 2</caption>
         
         <tr> 
             <th rowspan="2">Name</th>
             <td>John</td>
+            
         </tr>
         <tr>
 
@@ -72,7 +89,33 @@
             <th>Age</th>
             <td>70</td>
         </tr>
-    </table>
+        <tr> 
+            <th rowspan="2">Name</th>
+            <td>Jake</td>
+            
+        </tr>
+        <tr>
 
+            <td>Programmer</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>21</td>
+        </tr>
+        <tr> 
+            <th rowspan="2">Name</th>
+            <td>Steve</td>
+            
+        </tr>
+        <tr>
+
+            <td>Smith</td>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <td>42</td>
+        </tr>
+    </table>
+    
 </body>
 </html>
