@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        div{
+            width: 70%;
+            margin: auto;
+            background-color: rgb(231, 227, 167);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>HTML Forms</h2>
+    <div>
+        <!-- form attribute novalidate removes validation from the forms -->
+        <form action="" autocomplete="on">
+            <label for="firstName"> First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="first name">
+            <br>
+            <label for="lastName">Last Name </label>
+            <input type="text" id="lastName" name="lastName" placeholder="last name">
+            <br>
+            <label for="email">email </label>
+            <input type="email" id="email" name="email" placeholder="example@example.com">
+            <br><br><br>
+            <h2>Radio Type forms</h2>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <br><br><br>
+            <h3>Checkboxes</h3>
+            <input type="checkbox" name="cse" id="cse">
+            <label for="cse">Computer Science And Engineering</label>
+            <br>
+            <input type="checkbox" name="ece" id="ece">
+            <label for="ece">Electronics and Communication Engineering</label>
+            <br>
+            <input type="checkbox" name="it" id="it">
+            <label for="it">Information Technology</label>
+            <br><br><br>
+            <h2>Dropdown</h2>
+            <label for="options">options</label>
+            <select name="fruits" id="fruits" size="0">
+                <option value="Mango">Mango</option>
+                <option value="Apple">Apple</option>
+                <option value="Banana" selected>Banana</option>
+                <option value="Guava">Guava</option>
+            </select>
+            <br><br><br>
+            <h3>Text Area</h3>
+            <label for="area">Leave Your feedback here</label><br>
+            <textarea name="area" id="area" cols="45" rows="10" ></textarea>
+            <br>
+            <input type="button" value="Submit Here">
+        </form>
+    </div>
+</body>
+</html>
