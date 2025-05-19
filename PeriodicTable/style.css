@@ -15,10 +15,22 @@ td {
 td {
   border: 3px solid beige;
 }
+.hidden {
+  border: transparent;
+}
+td:hover {
+  scale: 120%;
+  transition: all ease-in-out;
+  transition-duration: 100ms;
+}
 table,
 td,
 tr {
   border-radius: 10px;
+}
+tr:hover {
+  width: 65px;
+  height: 65px;
 }
 
 h1 {
