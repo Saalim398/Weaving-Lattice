@@ -1,85 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blogs</title>
     <style>
-        ul{
-            list-style-type:none;
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: #333333;
 
         }
-        li{
+
+        li {
             float: left;
             padding: 12px;
             color: white;
         }
-        li:hover{
+
+        li:hover {
             background-color: black;
         }
-       
-        table,td,th{
+
+        table,
+        td,
+        th {
             border: 2px solid black;
             border-collapse: collapse;
             width: 40%;
             margin-top: 3rem;
             margin-right: 5%;
             margin-left: 5%;
-            
+
         }
-        th:nth-child(even),td:nth-child(even){
+
+        th:nth-child(even),
+        td:nth-child(even) {
             background-color: #333333;
             color: white;
         }
-        
-       a{
-        text-decoration: none;
-        color: white;
-       }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
     </style>
 </head>
+
 <body>
     <ul>
         <li><a href="https://saalimsnest.netlify.app/">Home</a></li>
         <li><a href="https://saalimsnest.netlify.app/">About</a></li>
         <li><a href="https://saalimsnest.netlify.app/">Blog</a></li>
     </ul>
-   
-   
-   
-        <table style="float: left;">
-            <caption>Table1</caption>
-            <tr>
-                <th colspan="2">Name</th>
-                <th>Age</th>
-            </tr>
-            <tr>
-                <td>John</td>
-                <td>doe</td>
-                <td>70</td>
-            </tr>
-            <tr>
-                <td>Jake</td>
-                <td>Programmer</td>
-                <td>21</td>
-            </tr>
-            <tr>
-                <td>Steve</td>
-                <td>Smith</td>
-                <td>42</td>
-            </tr>
-        </table>
-     <table>
+
+
+
+    <table style="float: left;">
+        <caption>Table1</caption>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>doe</td>
+            <td>70</td>
+        </tr>
+        <tr>
+            <td>Jake</td>
+            <td>Programmer</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Steve</td>
+            <td>Smith</td>
+            <td>42</td>
+        </tr>
+    </table>
+    <table>
         <caption>Table 2</caption>
-        
-        <tr> 
+
+        <tr>
             <th rowspan="2">Name</th>
             <td>John</td>
-            
+
         </tr>
         <tr>
 
@@ -89,10 +102,10 @@
             <th>Age</th>
             <td>70</td>
         </tr>
-        <tr> 
+        <tr>
             <th rowspan="2">Name</th>
             <td>Jake</td>
-            
+
         </tr>
         <tr>
 
@@ -102,10 +115,10 @@
             <th>Age</th>
             <td>21</td>
         </tr>
-        <tr> 
+        <tr>
             <th rowspan="2">Name</th>
             <td>Steve</td>
-            
+
         </tr>
         <tr>
 
@@ -116,6 +129,7 @@
             <td>42</td>
         </tr>
     </table>
-    
+
 </body>
+
 </html>
