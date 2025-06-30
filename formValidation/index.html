@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <style>
+        body{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            font-size: 2rem;
+        }
+        button{
+            font-size: 2rem;
+            width: 12rem;
+            border-radius: 3rem;
+            color: white;
+            border: 0px;
+            background-color: rgb(50, 169, 205);
+        }
+        button:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body style="font-size: 2rem;">
+    <script src="script.js"></script>
+    <form action="" >
+        Name
+        <br>
+        <input type="text" name="text" id="name">
+        <br>
+        Email
+        <br>
+        <input type="email" name="email" id="email">
+        
+        <br>
+        Phone number 
+        <br>
+        <input type="number" name="phnumber" id="phnumber">
+        <br>
+        Password
+        <br>
+        <input type="password" name="pswd" id="pswd">
+        <br>
+        Confirm Password
+        <br>
+        <input type="password" name="cpswd" id="cpswd">
+
+        <br>
+        <br>
+        
+        <button onclick="validateForm()">Submit</button>
+    </form>
+</body>
+</html>
