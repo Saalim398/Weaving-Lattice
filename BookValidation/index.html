@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isbn Number Validation using REGex</title>
+    
+</head>
+<body>
+    <center>
+        <h3>Book Validation using RegEx</h3>
+        <label for="bookname">Enter ISBN</label>
+        <br>
+        <br>
+        <input type="text" name="bookname" id="bookname">
+        <br>
+        <br>
+        <input type="submit" value="Check" id="btn">
+        <p id="result"></p>
+    </center>
+</body>
+<script>
+const btn = document.getElementById("btn")
+const txtInput = document.getElementById("bookname")
+const result = document.getElementById("result")
+const re = /^ISBN(\d{10}|\d{13})$/
+
+btn.addEventListener("click", () => {
+    const isbn = txtInput.value.trim()
+   
+    if (re.test(isbn)) {
+        
+        result.innerText="Valid Number"
+        return;
+    }
+    result.innerText="Invalid Number"
+})</script>
+</html>

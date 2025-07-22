@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Transpose</title>
+    <style>
+        #Submit{
+            width: 6rem;
+            height: 2rem;
+            color: white;
+            background-color: rgb(57, 88, 172);
+            border: 2px solid rgb(57, 88, 172);
+            border-radius: 7rem;
+        }
+        pre{
+            width: fit-content;
+            height: fit-content;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            border: 2px solid rgb(57, 88, 172);
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+    <center>
+        <h1>Matrix Transpose</h1>
+        <label for="matInp">Enter matrix (rows separated by newlines, values by commas):</label><br>
+        <textarea id="matInp" placeholder="1,2,3\n 4,5,6" rows="5"></textarea><br>
+        <br>
+        <button id="Submit" onclick="transposeMatrix()">Transpose</button>
+        <h2>Transposed Matrix</h2>
+        <pre id="transpose"></pre>
+    </center>
+</body>
+</html>
